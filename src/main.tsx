@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+
 import './index.css'
 import AllHome from './Home/AllHome';
 import AllAbout from './About/AllAbout';
@@ -12,9 +14,9 @@ import AllCart from './Cart/AllCart';
 import AllProfile from './Profile/AllProfile';
 import AllContact from './Contact/AllContact';
 import AllCheckout from './Checkout/AllCheckout';
-import AllTopCell from './TopCell/AllTopCell';
-import AllSomsengGalatero from './SomsengGalatero/AllSomsengGalatero';
-import AllPinnappleMacbook from './PinnappleMacbook/AllPinnappleMacbook';
+import AllProduct from './Product/AllProduct';
+import AllSingleProduct from './SingleProduct/AllSingleProduct';
+import AllSingleProductpay from './SingleProductpay/AllSingleProductpay';
 
 
 
@@ -52,16 +54,16 @@ const router = createBrowserRouter([
     element: <AllAbout/>
   },
    {
-    path: "topcell",
-    element: <AllTopCell/>
+    path: "Product",
+    element: <AllProduct/>
   },
   {
-    path: "SomsengGalatero",
-    element: <AllSomsengGalatero/>
+    path: "SingleProduct",
+    element: <AllSingleProduct/>
   },
   {
-    path: "PinnappleMacbook",
-    element: <AllPinnappleMacbook/>
+    path: "SingleProductpay",
+    element: <AllSingleProductpay/>
   },
   
 
