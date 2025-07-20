@@ -17,6 +17,7 @@ import AllCheckout from './Checkout/AllCheckout';
 import AllProduct from './Product/AllProduct';
 import AllSingleProduct from './SingleProduct/AllSingleProduct';
 import AllSingleProductpay from './SingleProductpay/AllSingleProductpay';
+import AllWishlist from './WishList/AllWishlist';
 
 
 
@@ -65,8 +66,14 @@ const router = createBrowserRouter([
     path: "SingleProductpay",
     element: <AllSingleProductpay/>
   },
-  
-
+  {
+    path: "SingleProductpay",
+    element: <AllSingleProductpay/>
+  },
+  {
+    path: "Wishlist",
+    element: <AllWishlist/>
+  }
 ]);
 
 

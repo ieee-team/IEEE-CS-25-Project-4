@@ -1,7 +1,7 @@
 export interface Product {
-  id: number;
-  save?: string,
-  amountSave?: number,
+  id: string;
+  save?: string;
+  amountSave?: number;
   new?: string;
   availablePieces?: number;
   title: string;
@@ -9,15 +9,19 @@ export interface Product {
   priceAfter?: number;
   price?: number;
   priceSec?: number;
- shipping: string[] | number;
+  shipping: string[] | number;
   inStock: string;
   image: string[];
   images?: string[];
+  isWishlisted?: boolean; 
+  category:string;
+  inWishlist: boolean;
 }
+
 
 export const products: Product[] = [
   {
-    id: 1,
+    id: "1",
     save: "save",
     amountSave: 199.00,
     availablePieces: 10,
@@ -26,6 +30,8 @@ export const products: Product[] = [
     priceAfter: 850,
     shipping: ["FREE SHIPPING"],
     inStock: "inStock",
+    inWishlist: false,
+    category: "phone",
    
     image: [
       "./src/assets/prod26.png.svg",
@@ -33,26 +39,30 @@ export const products: Product[] = [
     ]
   },
    {
-    id: 2,
+    id: "2",
     new:"New",
     title: "aPod Pro Tablet 2023 LTE + Wifi, GPS Cellular 12.9 Inch,512GB",
     price: 850,
     priceSec:677.889 ,
     shipping: 2.98,
     inStock: "inStock",
+    inWishlist: false,
+     category: "tablet",
    
     image: [
       "./src/assets/prod27.png.svg",
     ]
   },
    {
-    id: 3,
-     new:"New",
+    id: "3",
+    new:"New",
+    inWishlist: false,
     availablePieces: 5,
     title: "Samsung Galaxy X6 Ultra",
     price: 850,
     shipping: ["free shipping", "free gift"],
     inStock: "inStock",
+     category: "phone",
     image: ["./src/assets/prod65.png.svg"],
     images: [
       "./src/assets/prod65.png.svg",
@@ -61,8 +71,9 @@ export const products: Product[] = [
   },
 
    {
-    id: 4,
+    id: "4",
     save: "save",
+    inWishlist: false,
     amountSave: 199.00,
     availablePieces: 5,
     title: "Xiamoi Redmi Note 5, 64GB",
@@ -70,15 +81,18 @@ export const products: Product[] = [
     priceAfter: 850,
     shipping: ["free shipping"],
     inStock: "contact",
+     category: "phone",
     image: ["./src/assets/prod29.png.svg"],
   },
   {
-    id: 5,
+    id: "5",
     availablePieces: 8,
     title: "Microsute Alpha Ultra S5 Surface 128GB 2022, Sliver",
     price: 850,
+    inWishlist: false,
     shipping: ["free shipping"],
     inStock: "contact",
+     category: "tablet",
     image: ["./src/assets/prod30.png.svg"],
     images: [
       "./src/assets/prod30.png.svg",
@@ -86,15 +100,17 @@ export const products: Product[] = [
     ]
   },
     {
-    id: 6,
+    id: "6",
     save: "save",
     amountSave: 199.00,
     availablePieces: 108,
     title: "OPod Pro 12.9 Inch M12023, 64GB + Wifi, GPS",
     priceBefore:579 ,
+    inWishlist: false,
     priceAfter: 850,
     shipping: ["FREE SHIPPING"],
     inStock: "inStock",
+     category: "phone",
    
     image: [
       "./src/assets/prod26.png.svg",
@@ -102,86 +118,92 @@ export const products: Product[] = [
     ]
   },
     {
-    id: 7,
+    id: "7",
     availablePieces: 7,
     title: "Xioma Redmi Note 11 Pro256GB 2023, Black Smartphone",
     price: 850,
+    inWishlist: false,
     priceSec:677.889 ,
     shipping: ["FREE SHIPPING"],
     inStock: "inStock",
-   
+     category: "phone",
     image: [
       "./src/assets/prod5.png.svg",
     ]
   },
    {
-    id: 8,
-   
+    id: "8",
+    inWishlist: false,
     title: "aPod Pro Tablet 2023 LTE + Wifi, GPS Cellular",
     price: 350,
   
     shipping: 2.98,
     inStock: "inStock",
-   
+     category: "phone",
     image: [
       "./src/assets/prod66.png.svg",
     ]
   },
    {
-    id:9 ,
-   
+    id: "9",
+
     title: "Lenovo Redmi Note 5,64GB",
     price: 850,
-  
+     inWishlist: false,
      shipping: ["FREE SHIPPING"],
     inStock: "inStock",
-   
+     category: "phone",
     image: [
       "./src/assets/prod67.png.svg",
     ]
   },
     {
-    id: 10,
+    id: "10",
     new:"New",
+    inWishlist: false,
     availablePieces: 7,
     title: "LG Pro Tablet 2023 LTE +Wifi, GPS Cellular",
     price: 850,
     priceSec:677.889 ,
     shipping: 2.66,
     inStock: "PRE-ORDER",
-   
+     category: "phone",
     image: [
       "./src/assets/prod68.png.svg",
     ]
   },
     {
-    id: 11,
-     new:"OUT OF STOCK",
+    id: "11",
+    new:"OUT OF STOCK",
     availablePieces: 5,
     title: "Samsung Galaxy X6 UltraLTE 4G/128 Gb, Black Smartphone",
     price: 850,
     shipping: ["free shipping", "free gift"],
     inStock: "inStock",
+    inWishlist: false,
+     category: "phone",
     image: ["./src/assets/prod69.png.svg"],
   },
     {
-    id: 12,
+    id: "12",
     save: "save",
     amountSave: 199.00,
     title: "SROK Smart Phone 128GB, Oled Retina",
     priceBefore:579 ,
     priceAfter: 850,
+    inWishlist: false,
    shipping: ["free shipping"],
     inStock: "inStock",
-   
+     category: "phone",
     image: [
       "./src/assets/prod26.png.svg",
     ]
   },
 
    {
-    id: 13,
+    id: "13",
     save: "save",
+    inWishlist: false,
     amountSave: 199.00,
     availablePieces: 150,
     title: "SROK Smart Phone 128GB,",
@@ -189,38 +211,41 @@ export const products: Product[] = [
     priceAfter: 850,
     shipping: ["FREE SHIPPING"],
     inStock: "inStock",
-   
+     category: "phone",
     image: [
       "./src/assets/prod70.png.svg",
       
     ]
   },
    {
-    id: 14,
-     new:"New",
+    id: "14",
+    new:"New",
     title: "aPod Pro Tablet 2023 LTE + Wifi, GPS Cellular 12.9 Inch,512GB",
     price: 850,
     priceSec:677.889 ,
     shipping: 2.98,
+    inWishlist: false,
     inStock: "inStock",
-   
+     category: "tablet",
     image: [
       "./src/assets/prod27.png.svg",
     ]
   },
    {
-    id: 15,
-     new:"New",
+    id: "15",
+    new:"New",
     availablePieces: 5,
+    inWishlist: false,
     title: "Samsung Galaxy X6 Ultra",
     price: 850,
     shipping: ["free shipping", "free gift"],
     inStock: "inStock",
+     category: "phone",
     image: ["./src/assets/prod65.png.svg"],
    
   },
    {
-    id: 16,
+    id: "16",
     save: "save",
     amountSave: 199.00,
     availablePieces: 9,
@@ -229,6 +254,8 @@ export const products: Product[] = [
     priceAfter: 850,
     shipping: ["free shipping"],
     inStock: "contact",
+     category: "phone",
+     inWishlist: false,
     image: ["./src/assets/prod29.png.svg"],
   },
 ];
