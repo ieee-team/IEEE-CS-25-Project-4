@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
-import Layout from './Layout/layout'
+import Layout from './Layout/Layout'
 
 import './index.css'
 import AllHome from './Home/AllHome';
