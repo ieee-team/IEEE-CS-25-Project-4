@@ -1,0 +1,19 @@
+
+import Header from './Header';
+import Footer from './Footer';
+
+import { Outlet } from 'react-router-dom';
+
+function Layout() {
+  return (
+    <div className="container w-full bg-[#E2E4EB] mb-3">
+      <Header />
+      <main className="flex-grow">
+        <Outlet /> 
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default Layout;

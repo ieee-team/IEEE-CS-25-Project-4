@@ -1,8 +1,13 @@
+import ContactForm from "./ContactForm"
+import ContactMap from "./ContactMap"
+import SubContact from "./SubContact"
 
 function AllContact() {
   return (
     <div>
-      AllContact
+      <SubContact/>
+      <ContactForm/>
+      <ContactMap/>
     </div>
   )
 }

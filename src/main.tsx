@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
+import Layout from './Layout/layout'
+
 import './index.css'
 import AllHome from './Home/AllHome';
 import AllAbout from './About/AllAbout';
@@ -20,59 +22,60 @@ import AllSingleProductpay from './SingleProductpay/AllSingleProductpay';
 import AllWishlist from './WishList/AllWishlist';
 
 
-
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <AllHome/>
-  },
-  {
-    path: "login",
-    element: <AllLogin/>
-  },
-  {
-    path: "register",
-    element: <AllRegister/>
-  },
-  {
-    path: "cart",
-    element: <AllCart/>
-  },
-  {
-    path: "profile",
-    element: <AllProfile/>
-  },
-  {
-    path: "contact",
-    element: <AllContact/>
-  },
-  {
-    path: "checkout",
-    element: <AllCheckout/>
-  },
-  {
-    path: "about",
-    element: <AllAbout/>
-  },
-   {
-    path: "Product",
-    element: <AllProduct/>
-  },
-  {
-    path: "SingleProduct",
-    element: <AllSingleProduct/>
-  },
-  {
-    path: "SingleProductpay",
-    element: <AllSingleProductpay/>
-  },
-  {
-    path: "SingleProductpay",
-    element: <AllSingleProductpay/>
-  },
-  {
-    path: "Wishlist",
-    element: <AllWishlist/>
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <AllHome/>
+      },
+      {
+        path: "login",
+        element: <AllLogin/>
+      },
+      {
+        path: "register",
+        element: <AllRegister/>
+      },
+      {
+        path: "cart",
+        element: <AllCart/>
+      },
+      {
+        path: "profile",
+        element: <AllProfile/>
+      },
+      {
+        path: "contact",
+        element: <AllContact/>
+      },
+      {
+        path: "checkout",
+        element: <AllCheckout/>
+      },
+      {
+        path: "about",
+        element: <AllAbout/>
+      },
+      {
+        path: "Product",
+        element: <AllProduct/>
+      },
+      {
+        path: "SingleProduct",
+        element: <AllSingleProduct/>
+      },
+      {
+        path: "SingleProductpay",
+        element: <AllSingleProductpay/>
+      },
+      {
+        path: "Wishlist",
+        element: <AllWishlist/>
+      }
+    ]
   }
 ]);
 

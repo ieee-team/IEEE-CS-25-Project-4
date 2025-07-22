@@ -1,10 +1,15 @@
+import RegisterForm from "./RegisterForm"
+import SubRegister from "./SubRegister"
+
+
 
 function AllRegister() {
   return (
     <div>
-        <h1 className="text-3xl font-bold underline">Hello AllRegister</h1>
+      <SubRegister />
+      <RegisterForm />
     </div>
-  )
+  );
 }
 
 export default AllRegister

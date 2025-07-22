@@ -1,9 +1,12 @@
+import LoginForm from "./LoginForm"
+import SubLogin from "./SubLogin"
 
 
 function AllLogin() {
   return (
     <div>
-        <h1 className="text-3xl font-bold underline">Hello login</h1>
+        <SubLogin/>
+        <LoginForm/>
     </div>
   )
 }
